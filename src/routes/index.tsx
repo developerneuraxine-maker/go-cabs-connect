@@ -162,8 +162,6 @@ function HeroBookingCard() {
             ))}
           </div>
         </div>
-        <Inp label="Date *" required type="date" value={form.date} onChange={(v) => setForm({ ...form, date: v })} />
-        <Inp label="Time *" required type="time" value={form.time} onChange={(v) => setForm({ ...form, time: v })} />
         <Inp label="Passengers *" required type="number" value={form.passengers} onChange={(v) => setForm({ ...form, passengers: v })} placeholder="4" />
         <Inp label="Name *" required value={form.name} onChange={(v) => setForm({ ...form, name: v })} placeholder="Full name" />
         <div className="col-span-2">
@@ -584,9 +582,6 @@ function Contact() {
             <Inp label="Phone *" required type="tel" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} />
             <Inp label="Pickup Location" value={form.pickup} onChange={(v) => setForm({ ...form, pickup: v })} />
             <Inp label="Destination" value={form.destination} onChange={(v) => setForm({ ...form, destination: v })} />
-            <div className="sm:col-span-2">
-              <Inp label="Travel Date" type="date" value={form.date} onChange={(v) => setForm({ ...form, date: v })} />
-            </div>
             <label className="block sm:col-span-2">
               <Label>Message</Label>
               <textarea
