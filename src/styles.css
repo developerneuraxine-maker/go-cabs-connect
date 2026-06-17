@@ -46,8 +46,8 @@
   --foreground: oklch(0.16 0.02 50);
 
   --ink: oklch(0.14 0.02 50);
-  --ember: oklch(0.68 0.21 38);   /* deep orange */
-  --gold: oklch(0.83 0.17 85);    /* bright yellow-gold */
+  --ember: oklch(0.68 0.21 38); /* deep orange */
+  --gold: oklch(0.83 0.17 85); /* bright yellow-gold */
   --whatsapp: oklch(0.66 0.18 150);
 
   --card: oklch(1 0 0);
@@ -97,15 +97,25 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
 }
 
 @utility text-gradient-fire {
@@ -115,20 +125,43 @@
   color: transparent;
 }
 
-@utility bg-gradient-fire { background: var(--gradient-fire); }
-@utility bg-gradient-ink { background: var(--gradient-ink); }
-@utility shadow-glow { box-shadow: var(--shadow-glow); }
-@utility shadow-card { box-shadow: var(--shadow-card); }
+@utility bg-gradient-fire {
+  background: var(--gradient-fire);
+}
+@utility bg-gradient-ink {
+  background: var(--gradient-ink);
+}
+@utility shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
 
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 oklch(0.66 0.18 150 / 0.55); }
-  70% { box-shadow: 0 0 0 18px oklch(0.66 0.18 150 / 0); }
-  100% { box-shadow: 0 0 0 0 oklch(0.66 0.18 150 / 0); }
+  0% {
+    box-shadow: 0 0 0 0 oklch(0.66 0.18 150 / 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 18px oklch(0.66 0.18 150 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.66 0.18 150 / 0);
+  }
 }
-@utility pulse-ring { animation: pulse-ring 2s infinite; }
+@utility pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
 
 @keyframes float-y {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
-@utility float-y { animation: float-y 4s ease-in-out infinite; }
+@utility float-y {
+  animation: float-y 4s ease-in-out infinite;
+}

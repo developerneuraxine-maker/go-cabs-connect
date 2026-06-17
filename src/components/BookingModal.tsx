@@ -38,7 +38,9 @@ export function BookingModal({ open, onClose, subject, title, defaults }: Props)
     } else {
       document.body.style.overflow = "";
     }
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open, defaults]);
 
   if (!open) return null;
@@ -69,9 +71,7 @@ export function BookingModal({ open, onClose, subject, title, defaults }: Props)
             <p className="text-xs font-semibold uppercase tracking-widest text-ember">
               Book on WhatsApp
             </p>
-            <h3 className="text-xl font-bold text-foreground">
-              {title ?? "Enquire & Confirm"}
-            </h3>
+            <h3 className="text-xl font-bold text-foreground">{title ?? "Enquire & Confirm"}</h3>
             {subject && <p className="text-sm text-muted-foreground mt-0.5">{subject}</p>}
           </div>
           <button
@@ -121,9 +121,6 @@ export function BookingModal({ open, onClose, subject, title, defaults }: Props)
               ))}
             </div>
           </Field>
-
-
-
 
           <Field label="Passengers *" required>
             <input
@@ -210,5 +207,3 @@ function Field({
     </label>
   );
 }
-
-

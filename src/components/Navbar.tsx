@@ -28,13 +28,19 @@ export function Navbar() {
           />
           <div className="leading-tight">
             <p className="font-display text-base font-bold text-foreground">Dibrugarh Go Cabs</p>
-            <p className="text-[10px] uppercase tracking-[0.18em] text-ember">Trusted Travel Partner</p>
+            <p className="text-[10px] uppercase tracking-[0.18em] text-ember">
+              Trusted Travel Partner
+            </p>
           </div>
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-muted-foreground transition hover:text-foreground">
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-sm font-medium text-muted-foreground transition hover:text-foreground"
+            >
               {l.label}
             </a>
           ))}
@@ -62,12 +68,20 @@ export function Navbar() {
         <div className="border-t border-border bg-background md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3">
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-muted">
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-muted"
+              >
                 {l.label}
               </a>
             ))}
             <button
-              onClick={() => { setOpen(false); openBooking(); }}
+              onClick={() => {
+                setOpen(false);
+                openBooking();
+              }}
               className="mt-2 rounded-xl bg-gradient-fire px-5 py-3 text-sm font-bold text-ink shadow-glow"
             >
               Book Your Cab

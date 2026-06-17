@@ -25,7 +25,9 @@ export function buildBookingMessage(p: BookingPayload) {
   const lines: string[] = [];
   lines.push("Hi Dibrugarh Go Cabs 👋");
   lines.push("");
-  lines.push(p.subject ? `I would like to enquire about: ${p.subject}` : "I would like to book a cab.");
+  lines.push(
+    p.subject ? `I would like to enquire about: ${p.subject}` : "I would like to book a cab.",
+  );
   lines.push("");
   if (p.pickup) lines.push(`Pickup Location:\n${p.pickup}`);
   if (p.destination) lines.push(`Destination:\n${p.destination}`);
