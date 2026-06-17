@@ -122,24 +122,8 @@ export function BookingModal({ open, onClose, subject, title, defaults }: Props)
             </div>
           </Field>
 
-          <Field label="Pickup Date *" required>
-            <input
-              required
-              type="date"
-              value={form.date}
-              onChange={(e) => update("date", e.target.value)}
-              className={inputCls}
-            />
-          </Field>
-          <Field label="Pickup Time *" required>
-            <input
-              required
-              type="time"
-              value={form.time}
-              onChange={(e) => update("time", e.target.value)}
-              className={inputCls}
-            />
-          </Field>
+
+
 
           <Field label="Passengers *" required>
             <input
