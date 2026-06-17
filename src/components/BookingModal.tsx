@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { X } from "lucide-react";
 import { buildBookingMessage, waLink, type BookingPayload } from "@/lib/whatsapp";
 
@@ -227,4 +227,4 @@ function Field({
   );
 }
 
-type ReactNode = import("react").ReactNode;
+
