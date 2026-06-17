@@ -84,6 +84,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Dibrugarh Go Cabs" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Dibrugarh Go Cabs — Trusted Taxi Service Across Assam" },
+      { name: "twitter:title", content: "Dibrugarh Go Cabs — Trusted Taxi Service Across Assam" },
+      { property: "og:description", content: "Reliable 24×7 taxi service in Dibrugarh: airport transfers, outstation cabs, Innova rental, and Assam tour packages. Book on WhatsApp." },
+      { name: "twitter:description", content: "Reliable 24×7 taxi service in Dibrugarh: airport transfers, outstation cabs, Innova rental, and Assam tour packages. Book on WhatsApp." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/44d898e6-ce93-4dc0-84b4-e3e998182cf5/id-preview-f6bf3143--4b4515fd-4d91-4790-b6d6-4f4c00840f57.lovable.app-1781698332604.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/44d898e6-ce93-4dc0-84b4-e3e998182cf5/id-preview-f6bf3143--4b4515fd-4d91-4790-b6d6-4f4c00840f57.lovable.app-1781698332604.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
