@@ -162,8 +162,6 @@ function HeroBookingCard() {
             ))}
           </div>
         </div>
-        <Inp label="Date *" required type="date" value={form.date} onChange={(v) => setForm({ ...form, date: v })} />
-        <Inp label="Time *" required type="time" value={form.time} onChange={(v) => setForm({ ...form, time: v })} />
         <Inp label="Passengers *" required type="number" value={form.passengers} onChange={(v) => setForm({ ...form, passengers: v })} placeholder="4" />
         <Inp label="Name *" required value={form.name} onChange={(v) => setForm({ ...form, name: v })} placeholder="Full name" />
         <div className="col-span-2">
