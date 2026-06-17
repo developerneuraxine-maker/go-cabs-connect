@@ -582,9 +582,6 @@ function Contact() {
             <Inp label="Phone *" required type="tel" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} />
             <Inp label="Pickup Location" value={form.pickup} onChange={(v) => setForm({ ...form, pickup: v })} />
             <Inp label="Destination" value={form.destination} onChange={(v) => setForm({ ...form, destination: v })} />
-            <div className="sm:col-span-2">
-              <Inp label="Travel Date" type="date" value={form.date} onChange={(v) => setForm({ ...form, date: v })} />
-            </div>
             <label className="block sm:col-span-2">
               <Label>Message</Label>
               <textarea
