@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
-import logoAsset from "@/assets/logo.asset.json";
+import logoAsset from "@/assets/logo.jpg";
 import { ADDRESS, EMAIL, INSTAGRAM, PHONE_DISPLAY, WA_NUMBER } from "@/lib/whatsapp";
 
 export function Footer() {
@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Logo"
               width={44}
               height={44}

@@ -37,10 +37,10 @@ import {
 } from "@/lib/whatsapp";
 
 import heroRoad from "@/assets/hero-road.jpg";
-import fleetAnini from "@/assets/fleet-anini.asset.json";
-import fleetMountains from "@/assets/fleet-mountains.asset.json";
-import fleetYard from "@/assets/fleet-yard.asset.json";
-import banner from "@/assets/banner.asset.json";
+import fleetAnini from "@/assets/fleet-anini.jpg";
+import fleetMountains from "@/assets/fleet-mountains.jpg";
+import fleetYard from "@/assets/fleet-yard.jpg";
+import banner from "@/assets/banner.jpg";
 import tourKaziranga from "@/assets/tour-kaziranga.jpg";
 import tourMajuli from "@/assets/tour-majuli.jpg";
 import tourSivasagar from "@/assets/tour-sivasagar.jpg";
@@ -434,10 +434,10 @@ function Tours() {
     { name: "Kaziranga National Park Tour", img: tourKaziranga, days: "2–3 Days", tag: "Wildlife" },
     { name: "Majuli Island Tour", img: tourMajuli, days: "2 Days", tag: "River Island" },
     { name: "Sivasagar Heritage Tour", img: tourSivasagar, days: "1–2 Days", tag: "Ahom Heritage" },
-    { name: "Anini Adventure Tour", img: fleetAnini.url, days: "3–4 Days", tag: "Arunachal" },
-    { name: "Tinsukia Tour", img: fleetMountains.url, days: "1–2 Days", tag: "Northeast" },
+    { name: "Anini Adventure Tour", img: fleetAnini, days: "3–4 Days", tag: "Arunachal" },
+    { name: "Tinsukia Tour", img: fleetMountains, days: "1–2 Days", tag: "Northeast" },
     { name: "Meghalaya Tour", img: tourMeghalaya, days: "4–5 Days", tag: "Living Roots" },
-    { name: "Arunachal Pradesh Tour", img: fleetMountains.url, days: "5–7 Days", tag: "Himalayas" },
+    { name: "Arunachal Pradesh Tour", img: fleetMountains, days: "5–7 Days", tag: "Himalayas" },
     { name: "Custom Tour Packages", img: tourMajuli, days: "Flexible", tag: "Made For You" },
   ];
 
@@ -551,7 +551,7 @@ function Fleet() {
           <FleetCard
             key={v.name}
             {...v}
-            img={[fleetAnini.url, fleetYard.url, fleetMountains.url][i % 3]}
+            img={[fleetAnini, fleetYard, fleetMountains][i % 3]}
           />
         ))}
       </div>
@@ -658,17 +658,17 @@ function WhyUs() {
 function Gallery() {
   const imgs = [
     {
-      src: fleetAnini.url,
+      src: fleetAnini,
       cat: "Arunachal Tours",
       alt: "Fleet of Innovas in Anini, Arunachal Pradesh",
     },
     { src: tourKaziranga, cat: "Tour Packages", alt: "Kaziranga National Park" },
-    { src: fleetMountains.url, cat: "Road Trips", alt: "Cabs lined up in the mountains" },
+    { src: fleetMountains, cat: "Road Trips", alt: "Cabs lined up in the mountains" },
     { src: tourMajuli, cat: "Assam Tourism", alt: "Majuli Island paddy fields" },
-    { src: fleetYard.url, cat: "Fleet", alt: "Dibrugarh Go Cabs fleet yard" },
+    { src: fleetYard, cat: "Fleet", alt: "Dibrugarh Go Cabs fleet yard" },
     { src: tourMeghalaya, cat: "Tour Packages", alt: "Meghalaya living root bridge" },
     { src: tourSivasagar, cat: "Assam Tourism", alt: "Sivasagar Rang Ghar heritage" },
-    { src: banner.url, cat: "Customer Trips", alt: "Dibrugarh Go Cabs banner" },
+    { src: banner, cat: "Customer Trips", alt: "Dibrugarh Go Cabs banner" },
   ];
   const [active, setActive] = useState<number | null>(null);
 

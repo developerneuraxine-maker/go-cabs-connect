@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/logo.asset.json";
+import logoAsset from "@/assets/logo.jpg";
 import { useBooking } from "@/components/BookingProvider";
 
 const links = [
@@ -20,7 +20,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
         <a href="#top" className="flex items-center gap-3">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="Dibrugarh Go Cabs logo"
             width={44}
             height={44}
